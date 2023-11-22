@@ -22,7 +22,7 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to='services'>Services</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='Signup'>Sign Up</NavLinks>
+                            <NavLinks to='signup'>Sign Up</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
