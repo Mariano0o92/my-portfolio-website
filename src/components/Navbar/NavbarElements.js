@@ -29,7 +29,8 @@ padding: 0 24px;
 max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLink = styled(LinkR)`
+position: relative;
 display: flex;
 align-items: center;
 margin-left: 24px;
@@ -39,6 +40,11 @@ text-decoration: none;
 color: #fff;
 justify-self: flex-start;
 cursor: pointer;
+`
+
+export const NavLogo = styled.img`
+height: 100%;
+width: 180px;
 `
 
 export const MobileIcon = styled.div`

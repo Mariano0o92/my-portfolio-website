@@ -1,13 +1,16 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
+import { Nav, NavbarContainer, NavLink, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
+import logo from '../../images/logo.png'
 
 const Navbar = ({ toggle }) => {
 	return (
 		<>
 			<Nav>
 				<NavbarContainer>
-					<NavLogo to='/'>Maniek Software</NavLogo>
+					<NavLink to='/'>
+                    <NavLogo src={logo}></NavLogo>
+                    </NavLink>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
