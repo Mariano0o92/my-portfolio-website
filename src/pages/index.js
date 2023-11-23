@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data'
 import ServicesSection from '../components/ServicesSection'
+import Footer from '../components/Footer'
 
 const Home = () => {
 const [isOpen, setIsOpen] = useState(false)
@@ -23,6 +24,7 @@ const toggle = () => {
     <InfoSection { ...homeObjTwo } />
     <ServicesSection />
     <InfoSection { ...homeObjThree } />
+    <Footer />
     </>
   )
 }
