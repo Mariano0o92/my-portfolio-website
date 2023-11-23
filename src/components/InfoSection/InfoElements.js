@@ -56,7 +56,7 @@ font-size: 16px;
 font-weight: bold;
 line-height: 16px;
 letter-spacing: 1.4px;text-transform: uppercase;
-color: #01bf71;
+color: #E8AA42;
 `
 
 export const Heading = styled.h1`
