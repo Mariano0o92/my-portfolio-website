@@ -1,8 +1,13 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa'
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
+import { animateScroll as scroll } from 'react-scroll';
+import logo from '../../images/logo-transparent.png'
 
 const Footer = () => {
+	const toggleHome = () => {
+		scroll.scrollToTop()
+	}
 	return (
 		<FooterContainer>
 			<FooterWrap>
@@ -46,7 +51,7 @@ const Footer = () => {
 				</FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/'></SocialLogo>
+                        <SocialLogo to='/' onClick={toggleHome}>mariusz niedzielski</SocialLogo>
                         <WebsiteRights>Mariusz Niedzielski&copy; {new Date().getFullYear()} </WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href='/' target='_blank' aria-label='Facebook'>

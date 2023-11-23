@@ -89,8 +89,9 @@ justify-self: start;
 align-items: center;
 font-size: 1.5rem;
 font-weight: bold;
-color: #fff;
+color: #E8AA42;
 text-decoration: none;
+text-transform: uppercase;
 cursor: pointer;
 `
 
@@ -109,6 +110,11 @@ width: 240px;
 export const SocialIconLink = styled.a`
 font-size: 24px;
 color: #fff;
+transition: 0.3s ease-out;
+
+&:hover {
+    color: #E8AA42;
+}
 `
 
 
