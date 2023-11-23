@@ -17,10 +17,16 @@ margin: 0 auto;
 export const FooterLinksContainer = styled.div`
 display: flex;
 justify-content: center;
+align-items: center;
 
 @media screen and (max-width: 820px) {
     padding-top: 32px;
 }
+`
+export const FooterAvatar = styled.img`
+width: 130px;
+height: 130px;
+border-radius: 50%;
 `
 
 export const FooterLinksWrapper = styled.div`

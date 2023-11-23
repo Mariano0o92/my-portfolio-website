@@ -49,6 +49,7 @@ export const HeroContent = styled.div`
 	flex-direction: column;
 	align-items: center;
 	max-width: 1200px;
+	text-shadow: 1px 1px 5px #E8AA42;
 	z-index: 3;
 `
 
