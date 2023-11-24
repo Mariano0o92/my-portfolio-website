@@ -12,6 +12,7 @@ align-items: center;
 width: 100%;
 height: 100%;
 background: #0d0d0d;
+text-shadow: 1px 1px 5px #E8AA42;
 transition: 0.3s ease-in-out;
 opacity: ${({ $isOpen }) => ($isOpen ? '1' : '0')};
 top: ${({ $isOpen }) => ($isOpen ? '0' : '-100%')};
@@ -59,7 +60,7 @@ color: #fff;
 cursor: pointer;
 
 &:hover {
-    color: #01bf71;
+    color: #E8AA42;
     transition: 0.2s ease-in-out;
 }
 `
