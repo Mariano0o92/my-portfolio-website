@@ -13,8 +13,8 @@ width: 100%;
 height: 100%;
 background: #0d0d0d;
 transition: 0.3s ease-in-out;
-opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+opacity: ${({ $isOpen }) => ($isOpen ? '1' : '0')};
+top: ${({ $isOpen }) => ($isOpen ? '0' : '-100%')};
 z-index: 999;
 `
 
@@ -74,7 +74,7 @@ padding: 16px 64px;
 font-size: 16px;
 border: none;
 border-radius: 50px;
-background: #01bf71;
+background: #E8AA42;
 color: #010606;
 white-space: nowrap;
 text-decoration: none;

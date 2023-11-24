@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
+import {  MdArrowForward, MdArrowDownward } from 'react-icons/md'
 
 export const HeroContainer = styled.div`
 	position: relative;
@@ -10,6 +10,10 @@ export const HeroContainer = styled.div`
 	align-items: center;
 	background: #0c0c0c;
 	z-index: 1;
+
+	@media screen and (max-width: 768px) {
+		padding: 0 12px;
+	}
 `
 
 export const HeroShadow = styled.div`
@@ -51,6 +55,10 @@ export const HeroContent = styled.div`
 	max-width: 1200px;
 	text-shadow: 1px 1px 5px #E8AA42;
 	z-index: 3;
+
+	@media screen and (max-width: 420px) {
+		padding: 8px 12px;
+	}
 `
 
 export const HeroH1 = styled.h1`
@@ -61,7 +69,7 @@ export const HeroH1 = styled.h1`
 	@media screen and (max-width: 768px) {
 		font-size: 40px;
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 578px) {
 		font-size: 32px;
 	}
 `
@@ -76,8 +84,11 @@ export const HeroP = styled.p`
 	@media screen and (max-width: 768px) {
 		font-size: 24px;
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 578px) {
 		font-size: 18px;
+	}
+	@media screen and (max-width: 420px) {
+		font-size: 13px;
 	}
 `
 
@@ -90,10 +101,10 @@ export const HeroBtnWrapper = styled.div`
 
 export const ArrowForward = styled(MdArrowForward)`
 	margin-left: 8px;
-	font-size: 20px;
+	font-size: 23px;
 `
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
+export const ArrowDown = styled( MdArrowDownward)`
 	margin-left: 8px;
-	font-size: 20px;
+	font-size: 23px;
 `

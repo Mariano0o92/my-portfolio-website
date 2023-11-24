@@ -27,7 +27,7 @@ const Footer = () => {
 		<FooterContainer>
 			<FooterWrap>
 				<FooterLinksContainer>
-					<FooterAvatar src={avatar} />
+					{/* <FooterAvatar src={avatar} /> */}
 					<FooterLinksWrapper>
 						<FooterLinkItems>
 							<FooterLinkTitle>About Us</FooterLinkTitle>

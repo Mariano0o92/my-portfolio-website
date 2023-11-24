@@ -3,16 +3,16 @@ import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, Sidebar
 
 const Sidebar = ({ isOpen, toggle }) => {
 	return (
-		<SidebarContainer isOpen={isOpen} onClick={toggle} >
+		<SidebarContainer $isOpen={isOpen} onClick={toggle} >
 			<Icon onClick={toggle} >
 				<CloseIcon />
 			</Icon>
 			<SidebarWrapper>
 				<SidebarMenu>
-					<SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-					<SidebarLink to='discover' onClick={toggle}>Discover</SidebarLink>
-					<SidebarLink to='services' onClick={toggle}>Services</SidebarLink>
-					<SidebarLink to='signup' onClick={toggle}>Sign Up</SidebarLink>
+					<SidebarLink to='about' onClick={toggle}>//About</SidebarLink>
+					<SidebarLink to='discover' onClick={toggle}>//Skills</SidebarLink>
+					<SidebarLink to='services' onClick={toggle}>//Projects</SidebarLink>
+					<SidebarLink to='signup' onClick={toggle}>//Docs</SidebarLink>
 				</SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to='/signin'>Sign In</SidebarRoute>
