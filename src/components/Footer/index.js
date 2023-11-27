@@ -11,12 +11,6 @@ import {
 	FooterLink,
 	FooterFormWrapper,
 	FooterFormItems,
-	FooterForm,
-	FooterFormLabel,
-	FooterFormInput,
-	FooterFormTextAreaLabel,
-	FooterFormTextarea,
-	FooterFormButton,
 	SocialMedia,
 	SocialMediaWrap,
 	SocialLogo,
@@ -24,6 +18,7 @@ import {
 } from './FooterElements'
 import { animateScroll as scroll } from 'react-scroll'
 import avatar from '../../images/myAvatar.svg'
+import ContactForm from './FooterForm.js'
 
 const Footer = () => {
 	const toggleHome = () => {
@@ -49,21 +44,7 @@ const Footer = () => {
 						</FooterLinksWrapper>
 						<FooterFormWrapper>
 						<FooterFormItems>
-							<FooterForm>
-                <FooterFormLabel htmlFor='name'>Name:</FooterFormLabel>
-                <FooterFormInput type='text' id='name' name='name' />
-
-                <FooterFormLabel htmlFor='email'>Email:</FooterFormLabel>
-                <FooterFormInput type='email' id='email' name='email' />
-
-                <FooterFormLabel htmlFor='phone'>Phone:</FooterFormLabel>
-                <FooterFormInput type='tel' id='phone' name='phone' />
-
-                <FooterFormTextAreaLabel htmlFor='message'>Message:</FooterFormTextAreaLabel>
-                <FooterFormTextarea id='message' name='message'></FooterFormTextarea>
-
-                <FooterFormButton type='submit'>Submit</FooterFormButton>
-              </FooterForm>
+							<ContactForm />
 						</FooterFormItems>
 						</FooterFormWrapper>
 					

@@ -104,6 +104,7 @@ text-decoration: none;
 transition: 0.3s ease-out;
 
 @media screen and (max-width: 500px) {
+width: 100%;
 grid-template-columns: 1fr;
 }
 `
@@ -113,6 +114,7 @@ grid-column: 1 /2;
 `
 export const FooterFormInput = styled.input`
 grid-column: 1 /2;
+height: 22px;
 
 &:focus {
     outline: 1px solid #E8AA42;
@@ -124,7 +126,6 @@ grid-row: 1 / 2;
 
 @media screen and (max-width: 500px) {
     grid-column: 1 /2;
-    grid-row: 8 / 9;
 }
 `
 export const FooterFormTextarea = styled.textarea`
@@ -137,7 +138,6 @@ resize: vertical, horizontal;
 
 @media screen and (max-width: 500px) {
     grid-column: 1 /2;
-    grid-row: 9 / 13;
     max-width: 90vw;
 }
 
@@ -161,7 +161,6 @@ transition: all 0.4s ease-in-out;
 
 @media screen and (max-width: 500px) {
     grid-column: 1 /2;
-    grid-row: 13 / 14;
 }
 &:hover {
 background-color: #fff;
