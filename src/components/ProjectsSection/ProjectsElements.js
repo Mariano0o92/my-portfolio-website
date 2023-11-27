@@ -35,6 +35,7 @@ export const ProjectsVideo = styled.video`
 	width: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
+	border-radius: 10px;
 	opacity: 1;
 	transform: rotateY(0deg);
 	transition: transform 0.8s, opacity 0.8s;
@@ -65,9 +66,7 @@ export const ProjectsCard = styled.div`
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	max-height: 400px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
 	perspective: 500px;
 
   &:hover ${ProjectsVideo} {
@@ -114,5 +113,6 @@ transition: all 0.4s ease-in-out;
 &:hover {
 background-color: #fff;
 color: #010606;
+box-shadow: 1px 1px 10px #fff;
 }
 `

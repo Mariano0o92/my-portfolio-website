@@ -1,20 +1,26 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa'
 import {
 	FooterContainer,
 	FooterAvatar,
 	FooterWrap,
 	FooterLinksContainer,
+	FooterTitle,
 	FooterLinksWrapper,
 	FooterLinkItems,
-	FooterLinkTitle,
 	FooterLink,
+	FooterFormWrapper,
+	FooterFormItems,
+	FooterForm,
+	FooterFormLabel,
+	FooterFormInput,
+	FooterFormTextAreaLabel,
+	FooterFormTextarea,
+	FooterFormButton,
 	SocialMedia,
 	SocialMediaWrap,
 	SocialLogo,
-	WebsiteRights,
-	SocialIcons,
-	SocialIconLink,
+	WebsiteRights
 } from './FooterElements'
 import { animateScroll as scroll } from 'react-scroll'
 import avatar from '../../images/myAvatar.svg'
@@ -24,67 +30,50 @@ const Footer = () => {
 		scroll.scrollToTop()
 	}
 	return (
-		<FooterContainer>
+		<FooterContainer id='footer' >
 			<FooterWrap>
 				<FooterLinksContainer>
-					{/* <FooterAvatar src={avatar} /> */}
+					<FooterTitle>Say Hello!</FooterTitle>
 					<FooterLinksWrapper>
 						<FooterLinkItems>
-							<FooterLinkTitle>About Us</FooterLinkTitle>
-							<FooterLink to='/signin'>How it works</FooterLink>
-							<FooterLink to='/signin'>Testimonials</FooterLink>
-							<FooterLink to='/signin'>Careers</FooterLink>
-							<FooterLink to='/signin'>Investors</FooterLink>
-							<FooterLink to='/signin'>Terms of Service</FooterLink>
-						</FooterLinkItems>
-						<FooterLinkItems>
-							<FooterLinkTitle>About Us</FooterLinkTitle>
-							<FooterLink to='/signin'>How it works</FooterLink>
-							<FooterLink to='/signin'>Testimonials</FooterLink>
-							<FooterLink to='/signin'>Careers</FooterLink>
-							<FooterLink to='/signin'>Investors</FooterLink>
-							<FooterLink to='/signin'>Terms of Service</FooterLink>
+					<FooterAvatar src={avatar} />
 						</FooterLinkItems>
 					</FooterLinksWrapper>
 					<FooterLinksWrapper>
 						<FooterLinkItems>
-							<FooterLinkTitle>About Us</FooterLinkTitle>
-							<FooterLink to='/signin'>How it works</FooterLink>
-							<FooterLink to='/signin'>Testimonials</FooterLink>
-							<FooterLink to='/signin'>Careers</FooterLink>
-							<FooterLink to='/signin'>Investors</FooterLink>
-							<FooterLink to='/signin'>Terms of Service</FooterLink>
+							<FooterLink href='tel:+48792241724'><FaPhoneAlt /> +48 792-241-724</FooterLink>
+							<FooterLink href='mailto:mariuszn13@gmail.com?subject=Hi Mariusz!' target='_blank'><FaRegEnvelope /> mariuszn13@gmail.com</FooterLink>
+							<FooterLink href='https://github.com/Mariano0o92' target='_blank' aria-label='GitHub'><FaGithub /> GitHub</FooterLink>
+							<FooterLink href='https://www.linkedin.com/in/mariusz-niedzielski-226868162/' target='_blank' aria-label='LinkedIn'><FaLinkedin /> LinkedIn</FooterLink>
 						</FooterLinkItems>
-						<FooterLinkItems>
-							<FooterLinkTitle>About Us</FooterLinkTitle>
-							<FooterLink to='/signin'>How it works</FooterLink>
-							<FooterLink to='/signin'>Testimonials</FooterLink>
-							<FooterLink to='/signin'>Careers</FooterLink>
-							<FooterLink to='/signin'>Investors</FooterLink>
-							<FooterLink to='/signin'>Terms of Service</FooterLink>
-						</FooterLinkItems>
-					</FooterLinksWrapper>
+						</FooterLinksWrapper>
+						<FooterFormWrapper>
+						<FooterFormItems>
+							<FooterForm>
+                <FooterFormLabel htmlFor='name'>Name:</FooterFormLabel>
+                <FooterFormInput type='text' id='name' name='name' />
+
+                <FooterFormLabel htmlFor='email'>Email:</FooterFormLabel>
+                <FooterFormInput type='email' id='email' name='email' />
+
+                <FooterFormLabel htmlFor='phone'>Phone:</FooterFormLabel>
+                <FooterFormInput type='tel' id='phone' name='phone' />
+
+                <FooterFormTextAreaLabel htmlFor='message'>Message:</FooterFormTextAreaLabel>
+                <FooterFormTextarea id='message' name='message'></FooterFormTextarea>
+
+                <FooterFormButton type='submit'>Submit</FooterFormButton>
+              </FooterForm>
+						</FooterFormItems>
+						</FooterFormWrapper>
+					
 				</FooterLinksContainer>
 				<SocialMedia>
 					<SocialMediaWrap>
 						<SocialLogo to='/' onClick={toggleHome}>
 							mariusz niedzielski
 						</SocialLogo>
-						<WebsiteRights>Mariusz Niedzielski&copy; {new Date().getFullYear()} </WebsiteRights>
-						<SocialIcons>
-							<SocialIconLink href='/' target='_blank' aria-label='Facebook'>
-								<FaFacebook />
-							</SocialIconLink>
-							<SocialIconLink href='/' target='_blank' aria-label='Instagram'>
-								<FaInstagram />
-							</SocialIconLink>
-							<SocialIconLink href='/' target='_blank' aria-label='Youtube'>
-								<FaYoutube />
-							</SocialIconLink>
-							<SocialIconLink href='//www.twitter.com' target='_blank' aria-label='Twitter'>
-								<FaTwitter />
-							</SocialIconLink>
-						</SocialIcons>
+						<WebsiteRights>Mariusz Niedzielski&copy; {new Date().getFullYear()} <span>All Rights Reserved</span></WebsiteRights>
 					</SocialMediaWrap>
 				</SocialMedia>
 			</FooterWrap>
