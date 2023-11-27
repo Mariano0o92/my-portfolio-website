@@ -100,44 +100,52 @@ gap: 6px;
 font-size: 1rem;
 margin-bottom: 0.5rem;
 color: #fff;
-text-decoration: none;
 transition: 0.3s ease-out;
 
 @media screen and (max-width: 500px) {
-width: 100%;
 grid-template-columns: 1fr;
 }
 `
 
+export const Column1 = styled.div`
+grid-column: 1 / 2;
+display: flex;
+flex-direction: column;
+`
+export const Column2 = styled.div`
+grid-column: 2 / 3;
+display: flex;
+flex-direction: column;
+
+@media screen and (max-width: 500px) {
+    grid-column: 1 / 2;
+}
+`
+
 export const FooterFormLabel = styled.label`
-grid-column: 1 /2;
+width: 100%;
 `
 export const FooterFormInput = styled.input`
-grid-column: 1 /2;
-height: 22px;
+width: 100%;
+margin-bottom: 10px;
 
 &:focus {
     outline: 1px solid #E8AA42;
 }
 `
 export const FooterFormTextAreaLabel = styled.label`
-grid-column: 2 /3;
-grid-row: 1 / 2;
+width: 100%;
 
 @media screen and (max-width: 500px) {
-    grid-column: 1 /2;
 }
 `
 export const FooterFormTextarea = styled.textarea`
-grid-column: 2 /3;
-grid-row: 2 / 7;
+margin-bottom: 10px;
 min-width: 260px;
-min-height: 130px;
+min-height: 104px;
 max-width: 50vw;
-resize: vertical, horizontal;
 
 @media screen and (max-width: 500px) {
-    grid-column: 1 /2;
     max-width: 90vw;
 }
 
@@ -146,11 +154,9 @@ resize: vertical, horizontal;
 }
 `
 export const FooterFormButton = styled.button`
-grid-column: 2 /3;
 margin: 0 auto;
 padding: 5px 10px;
 width: 50%;
-text-decoration: none;
 color: #010606;
 background-color: #E8AA42;
 border-radius: 50px;
@@ -161,6 +167,7 @@ transition: all 0.4s ease-in-out;
 
 @media screen and (max-width: 500px) {
     grid-column: 1 /2;
+    grid-row: 13 / 14;
 }
 &:hover {
 background-color: #fff;

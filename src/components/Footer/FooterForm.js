@@ -2,7 +2,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
-import { FooterForm, FooterFormLabel, FooterFormInput, FooterFormTextAreaLabel, FooterFormTextarea, FooterFormButton } from './FooterElements';
+import { FooterForm, Column1, Column2, FooterFormLabel, FooterFormInput, FooterFormTextAreaLabel, FooterFormTextarea, FooterFormButton } from './FooterElements';
 
 const ContactForm = () => {
   const {
@@ -37,6 +37,7 @@ const ContactForm = () => {
 
   return (
     <FooterForm onSubmit={handleSubmit(onSubmit)}>
+      <Column1>
       <FooterFormLabel htmlFor="name">Name:</FooterFormLabel>
       <FooterFormInput
         type="text"
@@ -77,15 +78,17 @@ const ContactForm = () => {
         })}
       />
       {errors.phone && <p style={{ color: 'red', fontSize: '0.8rem', textShadow: 'none' }}>{errors.phone.message}</p>}
-
+      </Column1>
+<Column2>
       <FooterFormTextAreaLabel htmlFor="message">Message:</FooterFormTextAreaLabel>
       <FooterFormTextarea
         id="message"
         {...register('message', { required: 'Message is required' })}
       />
-      {errors.message && <p style={{ color: 'red', fontSize: '0.8rem', textShadow: 'none' }}>{errors.message.message}</p>}
+      {errors.message && <p style={{ marginBottom: '10px', color: 'red', fontSize: '0.8rem', textShadow: 'none' }}>{errors.message.message}</p>}
 
       <FooterFormButton type="submit">Submit</FooterFormButton>
+</Column2>
     </FooterForm>
   );
 };
