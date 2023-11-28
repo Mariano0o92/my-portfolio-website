@@ -6,7 +6,7 @@ export const ProjectsContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background: #010606;
+	background: #101522;
 	text-shadow: 1px 1px 5px #e8aa42;
 
 	@media screen and (max-width: 480px) {
@@ -65,6 +65,7 @@ export const ProjectsText = styled.div`
 	opacity: 0;
 	transform: rotateY(-180deg);
 	transition: transform 0.8s, opacity 0.8s;
+	pointer-events: none;
 `
 export const ProjectsCard = styled.div`
 	position: relative;
