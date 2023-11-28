@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { SkillsContainer, SkillsRow, SkillsH1, SkillsElement, Heading, ImgWrap, Img } from './SkillsElements'
+import { SkillsContainer, SkillsWrapper, SkillsRow, SkillsH1, SkillsElement, Heading, ImgWrap, Img } from './SkillsElements'
 import html5Logo from '../../images/html5Logo.svg'
 import css3Logo from '../../images/css3Logo.svg'
 import sassLogo from '../../images/sassLogo.svg'
@@ -24,6 +24,7 @@ const SkillsSection = ({ id }) => {
 		<>
 			<SkillsContainer id={id}>
 				<SkillsH1>Frameworks, Libraries & Technologies</SkillsH1>
+				<SkillsWrapper>
 				<SkillsRow>
 					<SkillsElement data-aos="zoom-out-down" data-aos-delay='1200'>
 						<Heading>HTML5</Heading>
@@ -100,6 +101,7 @@ const SkillsSection = ({ id }) => {
 						</ImgWrap>
 					</SkillsElement>
 				</SkillsRow>
+				</SkillsWrapper>
 			</SkillsContainer>
 		</>
 	)
