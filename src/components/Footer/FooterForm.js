@@ -1,10 +1,13 @@
 // FooterForm.js
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { FooterForm, Column1, Column2, FooterFormLabel, FooterFormInput, FooterFormTextAreaLabel, FooterFormTextarea, FooterFormButton } from './FooterElements';
 
 const ContactForm = () => {
+
+  const [successMessage, setSuccessMessage] = useState("");
+
   const {
     register,
     handleSubmit,
@@ -25,7 +28,7 @@ const ContactForm = () => {
     emailjs
       .send("service_je5ipks", "template_h0g8gya", templateParams, apiKey)
       .then((response) => {
-        console.log('Email sent successfully:', response);
+        setSuccessMessage("Email sent successfully!", response);
       })
       .catch((error) => {
         console.error('Error sending email:', error);
@@ -88,6 +91,7 @@ const ContactForm = () => {
       {errors.message && <p style={{ marginBottom: '10px', color: 'red', fontSize: '0.8rem', textShadow: 'none' }}>{errors.message.message}</p>}
 
       <FooterFormButton type="submit">Submit</FooterFormButton>
+      <p style={{ marginTop: '10px', color: 'green', fontSize: '0.8rem', textAlign: 'center', textShadow: 'none' }}>{successMessage}</p>
 </Column2>
     </FooterForm>
   );

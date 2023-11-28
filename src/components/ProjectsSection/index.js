@@ -24,7 +24,7 @@ const Projects = () => {
 					<ProjectsText>
 						<ProjectsH2>what-a-strike</ProjectsH2>
 						<ProjectsP>
-							As a footbal fan, I've created a simple app displaying results and standings of top five leagues in the
+							As a football fan, I've created a simple app displaying results and standings of top five leagues in the
 							world.
 						</ProjectsP>
 						<ProjectLink href='https://what-a-strike.netlify.app/' target='_blank'>Launch</ProjectLink>
@@ -35,7 +35,7 @@ const Projects = () => {
 					<ProjectsText>
 						<ProjectsH2>the-creeptos</ProjectsH2>
 						<ProjectsP>
-							I'm also blockchain technology enthusiast. This app displaying current rates of top cryptocurrencies.
+							I'm also blockchain technology enthusiast. This app displays current rates of top cryptocurrencies.
 						</ProjectsP>
                         <ProjectLink href='https://the-creeptos.netlify.app/' target='_blank'>Launch</ProjectLink>
 					</ProjectsText>

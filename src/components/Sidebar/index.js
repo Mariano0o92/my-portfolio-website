@@ -9,10 +9,10 @@ const Sidebar = ({ isOpen, toggle }) => {
 			</Icon>
 			<SidebarWrapper>
 				<SidebarMenu>
-					<SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-					<SidebarLink to='skills' onClick={toggle}>Skills</SidebarLink>
-					<SidebarLink to='projects' onClick={toggle}>Projects</SidebarLink>
-					<SidebarLink to='docs' onClick={toggle}>Docs</SidebarLink>
+					<SidebarLink to='about' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</SidebarLink>
+					<SidebarLink to='skills' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Skills</SidebarLink>
+					<SidebarLink to='projects' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Projects</SidebarLink>
+					<SidebarLink to='docs' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Docs</SidebarLink>
 				</SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to='footer' onClick={toggle}>Contact Me</SidebarRoute>

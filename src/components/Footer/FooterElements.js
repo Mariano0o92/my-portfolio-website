@@ -111,6 +111,7 @@ export const Column1 = styled.div`
 grid-column: 1 / 2;
 display: flex;
 flex-direction: column;
+min-width: 25%;
 `
 export const Column2 = styled.div`
 grid-column: 2 / 3;
@@ -142,7 +143,7 @@ width: 100%;
 export const FooterFormTextarea = styled.textarea`
 margin-bottom: 10px;
 min-width: 260px;
-min-height: 104px;
+min-height: 124px;
 max-width: 50vw;
 
 @media screen and (max-width: 500px) {
