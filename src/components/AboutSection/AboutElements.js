@@ -20,19 +20,27 @@ export const AboutH1 = styled.h1`
 `
 export const AboutWrapper = styled.div`
 	display: flex;
+    max-width: 1100px;
 `
 
 export const AboutH2 = styled.h2`
 	font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e8aa42;
 `
 
 export const AboutText = styled.div`
+	margin: 20px;
+    width: 50%;
 	font-size: 1rem;
 	text-align: left;
-	margin: 10px;
 	color: #fff;
 `
 
 export const AboutHR = styled.hr`
 	opacity: 0.3;
+`
+
+export const Strong = styled.strong`
+	color: #e8aa42;
 `
