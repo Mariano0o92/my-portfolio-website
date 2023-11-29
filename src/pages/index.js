@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection'
 import AboutSection from '../components/AboutSection'
 import SkillsSection from '../components/SkillsSection'
 import ProjectsSection from '../components/ProjectsSection'
+import DocsSection from '../components/DocsSection'
 import Footer from '../components/Footer'
 
 const Home = () => {
@@ -23,7 +24,7 @@ const toggle = () => {
     <AboutSection />
     <SkillsSection />
     <ProjectsSection />
-    <SkillsSection />
+    <DocsSection />
     <Footer />
     </>
   )
