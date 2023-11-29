@@ -128,6 +128,7 @@ width: 100%;
 `
 export const FooterFormInput = styled.input`
 width: 100%;
+min-width: 200px;
 margin-bottom: 10px;
 
 &:focus {
@@ -144,7 +145,7 @@ export const FooterFormTextarea = styled.textarea`
 margin-bottom: 10px;
 min-width: 260px;
 min-height: 124px;
-max-width: 50vw;
+max-width: 40vw;
 
 @media screen and (max-width: 500px) {
     max-width: 90vw;

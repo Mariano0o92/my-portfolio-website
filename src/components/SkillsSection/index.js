@@ -15,14 +15,14 @@ import responsiveLogo from '../../images/responsiveLogo.svg'
 import expressLogo from '../../images/expressLogo.svg'
 import mongodbLogo from '../../images/mongodbLogo.svg'
 
-const SkillsSection = ({ id }) => {
+const SkillsSection = () => {
 	useEffect(() => {
 		AOS.init({ duration: 1000, once: true })
 	}, [])
 
 	return (
 		<>
-			<SkillsContainer id={id}>
+			<SkillsContainer id='skills'>
 				<SkillsH1>Frameworks, Libraries & Technologies</SkillsH1>
 				<SkillsWrapper>
 				<SkillsRow>

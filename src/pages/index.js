@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
+import AboutSection from '../components/AboutSection'
 import SkillsSection from '../components/SkillsSection'
-import { homeObjOne, homeObjThree, homeObjTwo } from '../components/SkillsSection/Data'
 import ProjectsSection from '../components/ProjectsSection'
 import Footer from '../components/Footer'
 
@@ -20,10 +20,10 @@ const toggle = () => {
     <Sidebar isOpen={isOpen} toggle={toggle}/>
     <Navbar toggle={toggle} />
     <HeroSection />
-    <SkillsSection { ...homeObjOne } />
-    <SkillsSection { ...homeObjTwo } />
+    <AboutSection />
+    <SkillsSection />
     <ProjectsSection />
-    <SkillsSection { ...homeObjThree } />
+    <SkillsSection />
     <Footer />
     </>
   )

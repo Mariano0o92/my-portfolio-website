@@ -75,7 +75,7 @@ width: 100%;
 height: 100%;
 border: 2px solid #E8AA42;
 border-radius: 10px;
-transition: 0.3s all ease-out !important;
+
 
 @media screen and (max-width: 768px) {
     margin: 0;
