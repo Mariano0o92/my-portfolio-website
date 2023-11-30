@@ -5,7 +5,7 @@ export const DocsContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 50vh;
+	min-height: 100vh;
 	background: #010606;
 `
 export const DocsH1 = styled.h1`
@@ -52,4 +52,10 @@ text-align: center;
 background-color: #e8aa42;
 border-radius: 20px;
 cursor: pointer;
+transition: all 0.2s ease-in-out;
+
+&:hover {
+    background: #fff;
+    box-shadow: 1px 1px 10px #E8AA42;
+}
 `

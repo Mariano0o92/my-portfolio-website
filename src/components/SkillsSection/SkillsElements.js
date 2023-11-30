@@ -5,7 +5,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-min-height: 80vh;
+min-height: 100vh;
 color: #fff;
 background: #010606;
 text-shadow: 1px 1px 5px #e8aa42;

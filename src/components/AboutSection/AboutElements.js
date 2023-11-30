@@ -21,6 +21,11 @@ export const AboutH1 = styled.h1`
 export const AboutWrapper = styled.div`
 	display: flex;
     max-width: 1100px;
+
+	@media screen and (max-width: 576px) {
+		flex-direction: column;
+		align-items: center;
+	}
 `
 
 export const AboutH2 = styled.h2`
@@ -35,6 +40,10 @@ export const AboutText = styled.div`
 	font-size: 1rem;
 	text-align: left;
 	color: #fff;
+
+	@media screen and (max-width: 576px) {
+	width: 80%;
+	}
 `
 
 export const AboutHR = styled.hr`
