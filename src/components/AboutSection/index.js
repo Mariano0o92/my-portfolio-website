@@ -52,14 +52,15 @@ const About = () => {
 					<br />
 					And these are not just empty words. At the age of 23, I decided to move to the UK. I took every possible job
 					while trying to figure out what I want to do. It was a <Strong>School of life</Strong>. Four years there were
-					challenging, yet rewarding over time. It was a priceless life experience that helped me to improve my
+					challenging, yet rewarding over time. It was a priceless life experience that helped me to improve my{' '}
 					<Strong>English skills</Strong> and showed me that only the sky is the limit 💪.
 					<br />
 					<br />
 					<AboutHR />
 					<br />
-					If you got to this point - <Strong>thank you!</Strong>👍 I really appreciate that 😉. Feel free to contact me, whether it’s about work or a casual conversation. I will be more
-					than happy to answer any message I get. Hope to hear from you and <Strong>have a nice day!</Strong>
+					If you got to this point - <Strong>thank you!</Strong>👍 I really appreciate that 😉. Feel free to contact me,
+					whether it’s about work or a casual conversation. I will be more than happy to answer any message I get. Hope
+					to hear from you and <Strong>have a nice day!</Strong>
 					<br />
 					<br />
 					<AboutHR />
