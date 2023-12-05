@@ -37,7 +37,7 @@ const Footer = () => {
 					<FooterLinksWrapper>
 						<FooterLinkItems>
 							<FooterLink href='tel:+48792241724'><FaPhoneAlt /> +48 792-241-724</FooterLink>
-							<FooterLink href='mailto:mariuszn13@gmail.com?subject=Hi Mariusz!' target='_blank'><FaRegEnvelope /> mariuszn13@gmail.com</FooterLink>
+							<FooterLink href='mailto:mariuszniedzielski@mailfence.com?subject=Hi Mariusz!' target='_blank'><FaRegEnvelope /> mariuszniedzielski@mailfence.com</FooterLink>
 							<FooterLink href='https://github.com/Mariano0o92' target='_blank' aria-label='GitHub'><FaGithub /> GitHub</FooterLink>
 							<FooterLink href='https://www.linkedin.com/in/mariusz-niedzielski-226868162/' target='_blank' aria-label='LinkedIn'><FaLinkedin /> LinkedIn</FooterLink>
 						</FooterLinkItems>
