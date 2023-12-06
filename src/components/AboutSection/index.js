@@ -9,13 +9,13 @@ const About = () => {
 				<AboutText>
 					<AboutH2>Who am I?</AboutH2>
 					My name is Mariusz Niedzielski and I am currently looking for a vacancy as a Junior Frontend Developer. I
-					graduated from University of Zielona Góra with bachelor's degree in <Strong>civil engineering.</Strong>
+					graduated from University of Zielona Góra with bachelor's degree in <Strong>Civil Engineering.</Strong>
 					<br />
 					<br />
 					<AboutHR />
 					<br />
 					Unfortunately, decision about this course turned out to be a huge mistake. This is what happens when life
-					choices are made by a frivolous teenager. I decided to go for Civil Engineering over IT at my friends'
+					choices are made by a frivolous teenager. I picked Civil Engineering over IT at my friends'
 					suggestion and it still haunts me to this day. At the beggining of 2023 I started to think about a change in
 					my professional life. As this have been on my mind for a long time, I purchased a website development course
 					on <Strong>Udemy</Strong> platform. And it was a good shot!
