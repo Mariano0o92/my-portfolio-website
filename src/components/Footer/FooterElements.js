@@ -53,9 +53,9 @@ text-align: left;
 box-sizing: border-box;
 color: #fff;
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 435px) {
    margin: 0;
-   padding: 10px;
+   /* padding: 10px; */
    width: 100%;
 }
 `
@@ -69,6 +69,11 @@ transition: 0.3s ease-out;
 
 &:hover {
     color: #E8AA42;
+}
+
+@media screen and (max-width: 435px) {
+ font-size: 0.8rem;
+ margin-top: 0.5rem;
 }
 `
 export const FooterFormWrapper = styled.div`
