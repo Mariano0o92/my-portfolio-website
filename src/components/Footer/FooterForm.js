@@ -22,8 +22,8 @@ const ContactForm = () => {
       message: data.message,
     };
 
-    // Use your emailjs user ID
-    const apiKey = "g_h78ugv4V5lpunEB";
+    // Use your emailjs PUBLIC KEY
+    const apiKey = process.env.REACT_APP_API_KEY;
 
     emailjs
       .send("service_je5ipks", "template_h0g8gya", templateParams, apiKey)
