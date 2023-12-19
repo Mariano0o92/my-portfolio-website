@@ -138,7 +138,6 @@ export const ProjectLink = styled.a`
 	}
 	@media screen and (max-width: 480px) {
 		font-size: 0.7rem;
-		padding: 5px 15px;
 	}
 	@media screen and (max-height: 400px) {
 		font-size: 0.5rem;
