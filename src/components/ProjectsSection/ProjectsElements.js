@@ -30,6 +30,9 @@ export const ProjectsWrapper = styled.div`
 	@media screen and (max-width: 480px) {
 		padding: 0 20px;
 	}
+	@media screen and (max-height: 500px) {
+		display: flex;
+	}
 `
 
 export const ProjectsVideo = styled.video`
@@ -71,14 +74,6 @@ export const ProjectsCard = styled.div`
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 	perspective: 500px;
 
-	@media screen and (max-width: 665px) {
-		height: 37vh;
-	}
-	@media screen and (max-width: 480px) {
-		height: 40vh;
-		width: 50vw;
-	}
-
 	&:hover ${ProjectsVideo} {
 		opacity: 0;
 		transform: rotateY(-180deg);
@@ -107,6 +102,9 @@ export const ProjectsH2 = styled.h2`
 	@media screen and (max-width: 576px) {
 		font-size: 1.4rem;
 	}
+	@media screen and (max-height: 400px) {
+		font-size: 1rem;
+	}
 
 	@media screen and (max-width: 480px) {
 		font-size: 1rem;
@@ -120,6 +118,9 @@ export const ProjectsP = styled.p`
 	@media screen and (max-width: 576px) {
 		font-size: 0.8rem;
 	}
+	@media screen and (max-height: 400px) {
+		font-size: 0.5rem;
+	}
 `
 
 export const ProjectLink = styled.a`
@@ -131,13 +132,16 @@ export const ProjectLink = styled.a`
 	border-radius: 50px;
 	transition: all 0.4s ease-in-out;
 
+	
 	@media screen and (max-width: 576px) {
 		font-size: 1rem;
-		padding: 5px 15px;
 	}
-
 	@media screen and (max-width: 480px) {
 		font-size: 0.7rem;
+		padding: 5px 15px;
+	}
+	@media screen and (max-height: 400px) {
+		font-size: 0.5rem;
 	}
 
 	&:hover {
