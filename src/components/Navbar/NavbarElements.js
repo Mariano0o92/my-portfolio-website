@@ -14,10 +14,6 @@ export const Nav = styled.nav`
 	text-shadow: 1px 1px 5px #E8AA42;
 	z-index: 10;
 	transition: 0.8s all ease;
-
-	@media screen and (max-height: 480px) {
-		margin-top: -130px;
-	}
 `
 
 export const NavbarContainer = styled.div`
