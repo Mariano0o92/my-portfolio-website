@@ -22,7 +22,6 @@ const ContactForm = () => {
       message: data.message,
     };
 
-    // Use your emailjs PUBLIC KEY
     const apiKey = process.env.REACT_APP_API_KEY;
 
     emailjs
@@ -34,7 +33,6 @@ const ContactForm = () => {
         console.error('Error sending email:', error);
       });
 
-    // Reset the form after submission
     e.target.reset();
   };
 
