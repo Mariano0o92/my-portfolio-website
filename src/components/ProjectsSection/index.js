@@ -13,6 +13,7 @@ import {
 import Project1 from '../../videos/project1.mp4'
 import Project2 from '../../videos/project2.mp4'
 import Project3 from '../../videos/project3.mp4'
+import Project4 from '../../videos/project4.mp4'
 
 const Projects = () => {
 	return (
@@ -42,6 +43,16 @@ const Projects = () => {
 				</ProjectsCard>
 				<ProjectsCard>
 					<ProjectsVideo autoPlay loop muted src={Project3} type='video/mp4' />
+					<ProjectsText>
+						<ProjectsH2>fiorka-the-doggo</ProjectsH2>
+						<ProjectsP>
+						Simple and funny website about my dog using ReactJS, Framer Motion animation library, Figma and parallax effect.
+						</ProjectsP>
+                        <ProjectLink href='https://fiorka-the-doggo.netlify.app/' target='_blank'>Launch</ProjectLink>
+					</ProjectsText>
+				</ProjectsCard>
+				<ProjectsCard>
+					<ProjectsVideo autoPlay loop muted src={Project4} type='video/mp4' />
 					<ProjectsText>
 						<ProjectsH2>my-money-mate</ProjectsH2>
 						<ProjectsP>It's a full stack MERN application tracking your incomes and expenses.</ProjectsP>

@@ -14,7 +14,7 @@ export const ProjectsWrapper = styled.div`
 	margin: 10px auto;
 	padding: 0 50px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 16px;
 	align-content: center;
 	min-height: 80vh;
