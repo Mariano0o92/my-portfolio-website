@@ -29,8 +29,8 @@ const ContactForm = () => {
       .then((response) => {
         setSuccessMessage("Email sent successfully!", response);
       })
-      .catch((error) => {
-        console.error('Error sending email:', error);
+      .catch((errors) => {
+        console.error('Error sending email:', errors);
       });
 
     e.target.reset();
